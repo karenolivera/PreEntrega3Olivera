@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: #f05053;
+}
+
+header .logocontenedor {
+  background-color: #a4168a;
+  display: flex;
+  height: 150px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+header .logocontenedor a {
+  text-decoration: none;
+}
+header .logocontenedor h1 {
+  color: #ffffff;
+  font-family: playball, cursive;
+  font-size: 6rem;
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+}
+header .logocontenedor img {
+  text-align: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
+  padding: 10px;
+}
+header .logocontenedor img:hover {
+  border: #ffffff 5px solid;
+}
+header .navbar {
+  text-align: center;
+  margin-top: 15px;
+  display: flex;
+}
+header .navbar .menu {
+  list-style-type: none;
+  background-color: rgb(245, 168, 206);
+  padding: 0;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: "Dancing Script", cursive;
+}
+header .navbar .menu .item {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 1.1rem;
+}
+header .navbar .menu .item a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bolder;
+  display: inline-block;
+  padding: 20px 50px;
+}
+header .navbar .menu .item a:hover {
+  color: #ffffff;
+  background-color: darksalmon;
+  font-weight: unset;
+}
+header .navbar .menu .item .submenu {
+  position: absolute;
+  display: none;
+  font-size: 1rem;
+  background-color: rgb(241, 135, 186);
+  text-align: center;
+  padding: 0;
+  list-style: none;
+  width: 170px;
+  justify-content: center;
+}
+header .navbar .menu .item .submenu:hover {
+  display: flex;
+  flex-direction: column;
+}
+header .navbar .menu .item .submenu .subitem a {
+  display: flex;
+  font-size: 1rem;
+  padding: 19px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+main .section1 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+main .section1 h2 {
+  font-family: "EB Garamond", cursive;
+  text-align: center;
+  padding: 20px;
+}
+main .section1 .h2 ul {
+  text-align: center;
+}
+main .section2 {
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+main .section2 h3 {
+  padding: 20px;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+}
+main .section2 table {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+main .section2 table tr {
+  padding: 20px;
+}
+main .section2 table tr td {
+  font-family: "EB Garamond", cursive;
+  text-align: center;
+}
+main .section2 table th {
+  padding: 20px;
+  font-family: "EB Garamond", cursive;
+}
+main .section2 table img {
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
+  padding: 10px;
+}
+main .sectioncarrusel {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+}
+main .carousel-inner {
+  border-radius: 35px;
+}
+main .sectionaccesorios {
+  display: flex;
+  text-align: center;
+  padding: 3.5rem;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+main .sectionaccesorios h2 {
+  text-align: center;
+  font-family: "EB Garamond", cursive;
+  padding: 20px;
+}
+main .sectionaccesorios .card {
+  display: flex;
+  padding: 6rem;
+  border-radius: 40px;
+}
+main .sectionaccesorios .card img {
+  width: 60px;
+  border-radius: 40px;
+  text-align: center;
+}
+main .p h3 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+main .contacto {
+  padding: 6rem;
+  display: flex-;
+  text-align: center;
+}
+main .contacto .mb-3 {
+  padding: 50px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+main .contacto .mb-3 lable {
+  text-align: center;
+}
+
+footer .footerpie h3 {
+  text-align: center;
+  font-family: "EB Garamond", cursive;
+}
+footer .footerpie h4 {
+  text-align: center;
+}
+footer .footerpie h4 a {
+  text-align: center;
+}
+footer .columnasfooter h4 {
+  text-align: center;
+  font-family: cursive;
+}
+footer .redessociales {
+  position: fixed;
+  right: 1%;
+  top: 70%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  align-items: flex-end;
+  z-index: 100;
+  border-radius: 20px;
+  float: right;
+}
+footer .redessociales .iconredes a {
+  text-decoration: none;
+  color: white;
+  padding: 0.7rem;
+  display: flex;
+  transition: all 0.5s;
+}
+footer .redessociales .iconredes a .iconwhatsapp {
+  background-color: #4de948;
+  position: relative;
+}
+footer .redessociales .iconredes a .iconwhatsapp:hover {
+  background-color: #1e8b1b;
+  padding-right: 3rem;
+  border-radius: 1rem 0 0 1rem;
+}
+footer .redessociales .iconredes a .iconfacebook {
+  background-color: #1917a8;
+  border-radius: 0 0 0 1rem;
+}
+footer .redessociales .iconredes a .iconfacebook:hover {
+  background-color: #01035a;
+  padding-right: 3rem;
+  border-radius: 1rem 0 0 1rem;
+}
+footer .redessociales .iconredes a .iconinstagram {
+  background-color: #d42121;
+  border-radius: 1rem 0 0;
+}
+footer .redessociales .iconredes a .iconinstagram:hover {
+  background-color: #850000;
+  padding-right: 3rem;
+  border-radius: 1rem 0 0 1rem;
+}/*# sourceMappingURL=estilo.css.map */

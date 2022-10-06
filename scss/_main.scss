@@ -1,0 +1,159 @@
+main{
+    .section1{
+        width: 70%;
+        box-sizing: border-box;
+        text-decoration: none;
+        h2{
+            font-family: $fuente2;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .h2{
+            ul{
+                text-align: center;
+            }
+        }
+    }
+
+    .section2{
+        display: flex;
+        padding: 20px;
+        box-sizing: border-box;
+        text-decoration: none;
+
+        h3{
+            padding: 20px;
+            font-family: $fuente;
+            text-align: center;
+        }
+
+        table{
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+            text-decoration: none;
+
+            tr{
+                padding: 20px;
+                td{
+                    font-family: 'EB Garamond', cursive;
+                    text-align: center;
+                }
+            }
+            
+            th{
+                padding: 20px;  
+                font-family: $fuente2;
+
+            }
+
+            img{
+                height: 150px;
+                width: 150px;
+                border-radius: 25%;
+                padding: 10px;
+            }
+        }
+    }
+
+    .sectioncarrusel{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 40px;
+
+    }
+    .carousel-inner{
+        border-radius: 35px;
+    }
+
+    .sectionaccesorios{
+        display: flex;
+        text-align: center;
+        padding: 3.5rem;
+        box-sizing: border-box;
+        text-decoration: none;
+        h2{
+            text-align: center;
+            font-family: $fuente2;
+            padding: 20px;
+
+        }
+        .card{
+            display: flex;
+            padding: $tamano;
+            border-radius: 40px;
+            
+            img{
+                width: 60px;
+                border-radius: 40px;
+                text-align: center;
+            }
+        }
+    }
+    .p{
+        h3{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+
+    .contacto{
+        padding: $tamano;
+        display: flex-;
+        text-align: center;
+
+        .mb-3{
+            padding: 50px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            lable{
+                text-align: center;
+            }
+        }
+    }
+
+    .nos{
+        text-align: center;
+        padding: $tamano2;
+
+        .nosotros{
+            h2{
+                text-align: center;
+                font-family: $fuente;
+                padding: 1.5rem;
+            }
+            p{
+                text-align: center;
+                font-family: $fuente;
+                padding: 1.5rem;
+            }
+        }
+
+        .mision{
+            text-align: center;
+            padding: $tamano2;
+            h2{
+                font-family: 'Quicksand', sans-serif;
+                text-align: center;
+                padding: 1.5rem;
+            }
+            p{
+                font-family: 'Quicksand', sans-serif;
+                text-align: center;
+                padding: 3px;
+            }
+        }
+    }
+
+    .ubi{
+        h1{
+            font-family: 'PT Serif', serif;
+            text-align: center;
+            padding: 60px;
+        }
+
+    }
+}

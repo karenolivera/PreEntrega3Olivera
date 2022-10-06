@@ -1,0 +1,51 @@
+$fuente:'Dancing Script', cursive;
+$fuente2:'EB Garamond', cursive;
+$tamano:6rem;
+$tamano2:3.5rem;
+$color: #ffffff;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background: #f05053}
+
+@import "header";
+@import "main";
+@import "footer";
+
+
+
+
+@media(max-width:768px){
+
+    .logocontenedor{
+        display: none;
+    }
+    .menu{
+        display: list-item;
+    }
+    .item{
+        display: none;
+    }
+    .section1{
+        display: none;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .section2{
+        display: none;
+    }
+
+    .sectioncarrusel{
+        display: none;
+    }
+
+}

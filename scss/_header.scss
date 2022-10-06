@@ -1,0 +1,99 @@
+header{
+    .logocontenedor{
+        background-color:#a4168a;
+        display:flex;
+        height: 150;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        a{
+            text-decoration: none; 
+        }
+        h1{
+            color: $color;
+            font-family:playball,cursive;
+            font-size: 6rem;
+            display:flex;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        img{
+            text-align: center;
+            height: 150px;
+            width: 150px;
+            border-radius: 25%;
+            padding: 10px;
+            &:hover{
+                border: $color 5px solid;
+            }
+        }
+    }
+    
+    .navbar{
+        text-align: center;
+        margin-top: 15px;
+        display: flex; 
+        width: 100%;   
+
+        .menu{
+            list-style-type: none;
+            background-color:  rgb(245, 168, 206);
+            padding: 0;
+            width: 90%;
+            margin: 20px auto;
+            border-radius: 20px;
+            display: flex;
+            justify-content: 'Dancing Script', cursive;  
+
+            .item{
+                display: inline-block;
+                position: relative;
+                text-align: center;
+                font-size: 1.1rem;
+
+                a{
+                    color: #000000;
+                    text-decoration: none;
+                    font-weight:bolder;
+                    display: inline-block;
+                    padding: 20px;
+                    &:hover{
+                        color: #ffffff;
+                        background-color: darksalmon;
+                        font-weight: unset;
+                    }
+                }
+
+                .submenu{
+                    position: absolute;
+                    display: none;
+                    font-size:1rem;
+                    background-color: rgb(241, 135, 186);
+                    text-align: center;
+                    padding: 0;
+                    list-style: none;
+                    width: 170px;
+                    justify-content: center;
+                    &:hover{
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .subitem{
+
+                        a{
+                            display: flex;
+                            font-size: 1rem;
+                            padding: 19px;
+                            text-align: center;
+                            justify-content: center;
+                            align-items: center; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
