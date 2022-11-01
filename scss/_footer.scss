@@ -1,4 +1,8 @@
 footer{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .footerpie{
         h3{
             text-align: center;
@@ -11,61 +15,28 @@ footer{
             }
         }
     }
-    .columnasfooter{
-        h4{
-            text-align: center;
-            font-family: $fuente;
-        }
-    }
+
 
     .redessociales{
-        position: fixed;
-        right:1%;
-        top: 70%;
+        min-width: 700px;
         display: flex;
-        flex-direction: column;
-        font-size: 1.5rem;
-        align-items: flex-end;
-        z-index: 100;
-        border-radius: 20px;
-        float: right;
-
-        .iconredes{
-            a{
-                text-decoration: none;
-                color: white;
-                padding: .7rem;
-                display: flex;
-                transition: all .5s;
-                .iconwhatsapp{
-                    background-color: #4de948;
-                    position: relative;
-                    &:hover{
-                        background-color: #1e8b1b;
-                        padding-right: 3rem;
-                        border-radius: 1rem 0 0 1rem;
-                    }
-                }
-                .iconfacebook{
-                    background-color: #1917a8;
-                    border-radius: 0 0  0 1rem;
-                    &:hover{
-                        background-color: #01035a;
-                        padding-right: 3rem;
-                        border-radius: 1rem 0 0 1rem;
-                    } 
-                }
-                .iconinstagram{
-                    background-color: #d42121;
-                    border-radius: 1rem 0 0 ;
-                    &:hover{
-                        background-color: #850000;
-                        padding-right: 3rem;
-                        border-radius: 1rem 0 0 1rem;
-                    }
-                }
+        justify-content: center;
+        a{
+            text-decoration: none;
+            font-size: 28px;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            background: #314652;
+            color: #f1f1f1;
+            border-radius: 50%;
+            box-shadow: 2px 2px rgba(0, 0, 0, .5);
+            transition: all .4s ease-in-out;
+            &:hover{
+                transform: scale(1.2);
             }
-        }
+        }   
     }
 }
 

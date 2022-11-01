@@ -1,17 +1,27 @@
 main{
-    .section1{
-        width: 70%;
-        box-sizing: border-box;
+
+    .section{
+        display: flex;
+        padding: 20px;
         text-decoration: none;
-        h2{
+        box-sizing: content-box;
+
+        h1{
             font-family: $fuente2;
             text-align: center;
-            padding: 20px;
+            padding: 20rem;
         }
 
-        .h2{
+        h2{
             ul{
+                align-items: center;
                 text-align: center;
+
+                li{
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
             }
         }
     }
@@ -33,6 +43,7 @@ main{
             text-align: center;
             box-sizing: border-box;
             text-decoration: none;
+            
 
             tr{
                 padding: 20px;
@@ -57,35 +68,22 @@ main{
         }
     }
 
-    .sectioncarrusel{
+    .section3{
         padding: 20px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin-top: 40px;
-
-    }
-    .carousel-inner{
-        border-radius: 35px;
-    }
-
-    .sectionaccesorios{
-        display: flex;
-        text-align: center;
-        padding: 3.5rem;
-        box-sizing: border-box;
-        text-decoration: none;
-        h2{
+        align-items: center;
+        h3{
+            padding: 10px;
+            font-family: $fuente;
             text-align: center;
-            font-family: $fuente2;
-            padding: 20px;
-
         }
-        .card{
-            display: flex;
-            padding: $tamano;
-            border-radius: 40px;
-            
+    }
+
+    .crr{
+        .carousel-inner{
+
+            border-radius: 50px;
+            max-height: 20rem;
+
             img{
                 width: 60px;
                 border-radius: 40px;
@@ -93,26 +91,63 @@ main{
             }
         }
     }
-    .p{
-        h3{
+
+    .accesorios{
+        text-align: center;
+        padding: $tamano2;
+
+        h2{
             text-align: center;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: $fuente2;
+            padding: 20px;
+
+        }
+
+        .galacc{
+            display: flex;
+            padding: 20px;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-items: center;
+
+            .card{
+                width: 150px;
+                margin: 40px 40px;
+                border-radius: 40px;
+                overflow: hidden;
+                height: auto;
+                justify-content: center;
+            }    
+            img{
+                width: 60px;
+                border-radius: 40px;
+               justify-items: center;
+            }
+
+            .card-tex{
+                text-align: center;
+                font-family: $fuente
+            }
         }
     }
 
     .contacto{
-        padding: $tamano;
         display: flex-;
         text-align: center;
+        padding: 50%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        .form{
 
-        .mb-3{
-            padding: 50px;
-            text-align: center;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            lable{
+            .form-row{
+                padding: 20px;
                 text-align: center;
             }
-        }
+
+            .col-md-4 mb-3{
+                padding: 20px;
+                text-align: center;
+            }
+        }    
     }
 
     .nos{
@@ -154,6 +189,5 @@ main{
             text-align: center;
             padding: 60px;
         }
-
     }
 }
