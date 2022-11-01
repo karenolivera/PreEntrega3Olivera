@@ -2,7 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
+}
+
+:root {
+  --facebook: #3b5999;
+  --instagram: #e4405f;
+  --twitter: #bd081c;
+  --whatsaap: #4de948;
 }
 
 body {
@@ -12,8 +18,7 @@ body {
 header .logocontenedor {
   background-color: #a4168a;
   display: flex;
-  height: 150px;
-  position: relative;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -42,6 +47,7 @@ header .navbar {
   text-align: center;
   margin-top: 15px;
   display: flex;
+  width: 100%;
 }
 header .navbar .menu {
   list-style-type: none;
@@ -64,7 +70,7 @@ header .navbar .menu .item a {
   text-decoration: none;
   font-weight: bolder;
   display: inline-block;
-  padding: 20px 50px;
+  padding: 20px;
 }
 header .navbar .menu .item a:hover {
   color: #ffffff;
@@ -95,18 +101,24 @@ header .navbar .menu .item .submenu .subitem a {
   align-items: center;
 }
 
-main .section1 {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+main .section {
+  display: flex;
+  padding: 20px;
   text-decoration: none;
+  box-sizing: content-box;
 }
-main .section1 h2 {
+main .section h1 {
   font-family: "EB Garamond", cursive;
   text-align: center;
-  padding: 20px;
+  padding: 20rem;
 }
-main .section1 .h2 ul {
+main .section h2 ul {
+  align-items: center;
+  text-align: center;
+}
+main .section h2 ul li {
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 main .section2 {
@@ -143,56 +155,111 @@ main .section2 table img {
   border-radius: 25%;
   padding: 10px;
 }
-main .sectioncarrusel {
+main .section3 {
   padding: 20px;
-  display: flex;
-  justify-content: center;
+  align-items: center;
+}
+main .section3 h3 {
+  padding: 10px;
+  font-family: "Dancing Script", cursive;
   text-align: center;
-  margin-top: 40px;
 }
-main .carousel-inner {
-  border-radius: 35px;
+main .crr .carousel-inner {
+  border-radius: 50px;
+  max-height: 20rem;
 }
-main .sectionaccesorios {
-  display: flex;
-  text-align: center;
-  padding: 3.5rem;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-main .sectionaccesorios h2 {
-  text-align: center;
-  font-family: "EB Garamond", cursive;
-  padding: 20px;
-}
-main .sectionaccesorios .card {
-  display: flex;
-  padding: 6rem;
-  border-radius: 40px;
-}
-main .sectionaccesorios .card img {
+main .crr .carousel-inner img {
   width: 60px;
   border-radius: 40px;
   text-align: center;
 }
-main .p h3 {
+main .accesorios {
   text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 3.5rem;
+}
+main .accesorios h2 {
+  text-align: center;
+  font-family: "EB Garamond", cursive;
+  padding: 20px;
+}
+main .accesorios .galacc {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main .accesorios .galacc .card {
+  width: 150px;
+  margin: 40px 40px;
+  border-radius: 40px;
+  overflow: hidden;
+  height: auto;
+  justify-content: center;
+}
+main .accesorios .galacc img {
+  width: 60px;
+  border-radius: 40px;
+  justify-items: center;
+}
+main .accesorios .galacc .card-tex {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
 }
 main .contacto {
-  padding: 6rem;
   display: flex-;
   text-align: center;
-}
-main .contacto .mb-3 {
-  padding: 50px;
-  text-align: center;
+  padding: 50%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-main .contacto .mb-3 lable {
+main .contacto .form .form-row {
+  padding: 20px;
   text-align: center;
 }
+main .contacto .form .col-md-4 mb-3 {
+  padding: 20px;
+  text-align: center;
+}
+main .nos {
+  text-align: center;
+  padding: 3.5rem;
+}
+main .nos .nosotros h2 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  padding: 1.5rem;
+}
+main .nos .nosotros p {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  padding: 1.5rem;
+}
+main .nos .mision {
+  text-align: center;
+  padding: 3.5rem;
+}
+main .nos .mision h2 {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  padding: 1.5rem;
+}
+main .nos .mision p {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  padding: 3px;
+}
+main .ubi h1 {
+  font-family: "PT Serif", serif;
+  text-align: center;
+  padding: 60px;
+}
 
+footer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 footer .footerpie h3 {
   text-align: center;
   font-family: "EB Garamond", cursive;
@@ -203,53 +270,48 @@ footer .footerpie h4 {
 footer .footerpie h4 a {
   text-align: center;
 }
-footer .columnasfooter h4 {
-  text-align: center;
-  font-family: cursive;
-}
 footer .redessociales {
-  position: fixed;
-  right: 1%;
-  top: 70%;
+  min-width: 700px;
   display: flex;
-  flex-direction: column;
-  font-size: 1.5rem;
-  align-items: flex-end;
-  z-index: 100;
-  border-radius: 20px;
-  float: right;
+  justify-content: center;
 }
-footer .redessociales .iconredes a {
+footer .redessociales a {
   text-decoration: none;
-  color: white;
-  padding: 0.7rem;
-  display: flex;
-  transition: all 0.5s;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #314652;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
 }
-footer .redessociales .iconredes a .iconwhatsapp {
-  background-color: #4de948;
-  position: relative;
+footer .redessociales a:hover {
+  transform: scale(1.2);
 }
-footer .redessociales .iconredes a .iconwhatsapp:hover {
-  background-color: #1e8b1b;
-  padding-right: 3rem;
-  border-radius: 1rem 0 0 1rem;
-}
-footer .redessociales .iconredes a .iconfacebook {
-  background-color: #1917a8;
-  border-radius: 0 0 0 1rem;
-}
-footer .redessociales .iconredes a .iconfacebook:hover {
-  background-color: #01035a;
-  padding-right: 3rem;
-  border-radius: 1rem 0 0 1rem;
-}
-footer .redessociales .iconredes a .iconinstagram {
-  background-color: #d42121;
-  border-radius: 1rem 0 0;
-}
-footer .redessociales .iconredes a .iconinstagram:hover {
-  background-color: #850000;
-  padding-right: 3rem;
-  border-radius: 1rem 0 0 1rem;
+
+@media (max-width: 768px) {
+  .logocontenedor {
+    display: none;
+  }
+  .menu {
+    display: list-item;
+  }
+  .item {
+    display: none;
+  }
+  .section1 {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+  .section2 {
+    display: none;
+  }
+  .sectioncarrusel {
+    display: none;
+  }
 }/*# sourceMappingURL=estilo.css.map */
